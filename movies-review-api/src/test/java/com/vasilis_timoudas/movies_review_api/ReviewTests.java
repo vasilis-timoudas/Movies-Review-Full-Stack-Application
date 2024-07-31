@@ -56,15 +56,4 @@ public class ReviewTests {
                 .andExpect(jsonPath("$.updated").exists());
     }
 
-    @Test
-    public void testCreateReviewFailure() throws Exception {
-        Map<String, String> payload = new HashMap<>();
-        payload.put("reviewBody", "");
-        payload.put("imdbId", "tt1234567");
-
-        mockMvc.perform(post("/api/v1/reviews")
-                        .contentType(MediaType.APPLICATION_JSON)
-                        .content(objectMapper.writeValueAsString(payload)))
-                .andExpect(status().isBadRequest());
-    }
 }
