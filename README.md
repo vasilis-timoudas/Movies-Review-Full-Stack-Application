@@ -1,2 +1,2 @@
 # Movies-Review-Full-Stack-Application
-Movies review full stack application using spring boot for the backend and react for the frontend
+Movies Review Full Stack Application using Spring Boot for the backend, ReactJS for the frontend and MongoDB for the database
